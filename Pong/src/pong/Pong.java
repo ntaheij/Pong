@@ -155,7 +155,7 @@ public class Pong implements ActionListener, KeyListener
 		if (gameStatus == 0)
 		{
 			g.setColor(Color.WHITE);
-			g.setFont(new Font("Lucida Sans", 1, 50));
+			g.setFont(new Font(font, 1, 50));
 
 			g.drawString("PONG", width / 2 - 75, 50);
 
