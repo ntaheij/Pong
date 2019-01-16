@@ -139,6 +139,12 @@ public class Pong implements ActionListener, KeyListener
 				{
 					botCooldown = 10;
 				}
+				if (botDifficulty == 3) {
+					botCooldown = 5;
+				}
+				if (botDifficulty == 4) {
+					botCooldown = 2;
+				}
 			}
 		}
 
@@ -171,7 +177,11 @@ public class Pong implements ActionListener, KeyListener
 
 		if (selectingDifficulty)
 		{
-			String string = botDifficulty == 0 ? "Easy" : (botDifficulty == 1 ? "Medium" : "Hard");
+			String string = botDifficulty == 0 ? "Easy" :
+						   (botDifficulty == 1 ? "Medium" :
+					       (botDifficulty == 2 ? "Hard" : 
+					       (botDifficulty == 3 ? "Expert" : 
+					    		   				 "Impossible")));
 
 			g.setFont(new Font(font, 1, 30));
 
@@ -271,7 +281,7 @@ public class Pong implements ActionListener, KeyListener
 		{
 			if (selectingDifficulty)
 			{
-				if (botDifficulty < 2)
+				if (botDifficulty < 4)
 				{
 					botDifficulty++;
 				}
