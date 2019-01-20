@@ -33,7 +33,7 @@ public class Pong implements ActionListener, KeyListener
 
 	public boolean w, s, up, down;
 
-	public int gameStatus = 0, scoreLimit = 7, playerWon; //0 = Menu, 1 = Paused, 2 = Playing, 3 = Over
+	public int gameStatus = 0, scoreLimit = 7, playerWon; //0 = Menu, 1 = Paused, 2 = Playing, 3 = Over //
 
 	public int botDifficulty, botMoves, botCooldown = 0;
 
